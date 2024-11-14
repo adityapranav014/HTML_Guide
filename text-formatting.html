@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Formatting</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .back-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 20px 0;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+
+        .section {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+            width: 80%;
+            max-width: 800px;
+        }
+
+        .section h2 {
+            color: #34495e;
+        }
+
+        .section p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .list-output {
+            margin-top: 10px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        code {
+            background-color: #f0f0f0;
+            padding: 8px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        pre {
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Text Formatting</h1>
+
+    <a href="index.html" class="back-button">Back to Home</a>
+
+    <div class="section">
+        <h2>1. Bold Text</h2>
+        <p>The <code>&lt;b&gt;</code> tag is used to make text bold. It is often used for emphasizing important content.
+        </p>
+        <p>Example:</p>
+
+        <div class="list-output">
+            <p><b>This is bold text</b></p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>2. Italic Text</h2>
+        <p>The <code>&lt;i&gt;</code> tag is used to make text italic. It is commonly used for quotes or foreign words.
+        </p>
+        <p>Example:</p>
+
+        <div class="list-output">
+            <p><i>This is italic text</i></p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>3. Underlined Text</h2>
+        <p>The <code>&lt;u&gt;</code> tag is used to underline text. It was originally used to indicate links, but now
+            it is used for other purposes.</p>
+        <p>Example:</p>
+
+        <div class="list-output">
+            <p><u>This is underlined text</u></p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>4. Strikethrough Text</h2>
+        <p>The <code>&lt;s&gt;</code> or <code>&lt;del&gt;</code> tag is used to apply a strikethrough effect on text.
+        </p>
+        <p>Example:</p>
+
+        <div class="list-output">
+            <p><s>This text is struck through</s></p>
+            <p><del>This text is also struck through</del></p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>5. Superscript Text</h2>
+        <p>The <code>&lt;sup&gt;</code> tag is used to define superscript text. This is often used in mathematical
+            expressions or footnotes.</p>
+        <p>Example:</p>
+
+        <div class="list-output">
+            <p>Water is H<sup>2</sup>O</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>6. Subscript Text</h2>
+        <p>The <code>&lt;sub&gt;</code> tag is used to define subscript text. This is often used in chemical formulas.
+        </p>
+        <p>Example:</p>
+
+        <div class="list-output">
+            <p>CO<sub>2</sub></p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>7. Code Text</h2>
+        <p>The <code>&lt;code&gt;</code> tag is used to display inline code or programming syntax.</p>
+        <p>Example:</p>
+
+        <div class="list-output">
+            <p>Here is an example of inline code: <code>let x = 10;</code></p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>8. Small Text</h2>
+        <p>The <code>&lt;small&gt;</code> tag is used to display text in a smaller font size. This is often used for
+            copyright information or disclaimers.</p>
+        <p>Example:</p>
+
+        <div class="list-output">
+            <p><small>This is small text</small></p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>9. Marked Text</h2>
+        <p>The <code>&lt;mark&gt;</code> tag is used to highlight text, usually for search results or important
+            information.</p>
+        <p>Example:</p>
+
+        <div class="list-output">
+            <p>This is <mark>highlighted text</mark></p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>10. Blockquote</h2>
+        <p>The <code>&lt;blockquote&gt;</code> tag is used to define a block of text that is a quotation from another
+            source.</p>
+        <p>Example:</p>
+
+        <div class="list-output">
+            <blockquote>
+                "The only limit to our realization of tomorrow is our doubts of today." – Franklin D. Roosevelt
+            </blockquote>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>11. Preformatted Text</h2>
+        <p>The <code>&lt;pre&gt;</code> tag is used to display preformatted text, where the spacing and line breaks are
+            preserved.</p>
+        <p>Example:</p>
+
+        <div class="list-output">
+            <pre>
+                This is preformatted text
+                that preserves spaces and
+                line breaks.
+            </pre>
+        </div>
+    </div>
+
+</body>
+
+</html>

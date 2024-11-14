@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Lists</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .back-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 20px 0;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+
+        .section {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+            width: 80%;
+            max-width: 800px;
+        }
+
+        .section h2 {
+            color: #34495e;
+        }
+
+        .section p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .list-output {
+            margin-top: 10px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        ul,
+        ol,
+        dl {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        dt {
+            font-weight: bold;
+        }
+
+        dd {
+            margin-bottom: 12px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>HTML Lists</h1>
+
+    <a href="index.html" class="back-button">Back to Home</a>
+
+    <div class="section">
+        <h2>1. Ordered List</h2>
+        <p>An ordered list is used when the order of the list items matters. It is represented by the
+            <code>&lt;ol&gt;</code> element.</p>
+        <p>Here is an example of an ordered list:</p>
+
+        <div class="list-output">
+            <ol>
+                <li>First item</li>
+                <li>Second item</li>
+                <li>Third item</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>2. Unordered List</h2>
+        <p>An unordered list is used when the order of the list items doesn't matter. It is represented by the
+            <code>&lt;ul&gt;</code> element.</p>
+        <p>Here is an example of an unordered list:</p>
+
+        <div class="list-output">
+            <ul>
+                <li>Apple</li>
+                <li>Banana</li>
+                <li>Orange</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>3. Description List</h2>
+        <p>A description list is used when you want to pair terms with their descriptions. It is represented by the
+            <code>&lt;dl&gt;</code>, <code>&lt;dt&gt;</code>, and <code>&lt;dd&gt;</code> elements.</p>
+        <p>Here is an example of a description list:</p>
+
+        <div class="list-output">
+            <dl>
+                <dt>HTML</dt>
+                <dd>A markup language used for creating web pages.</dd>
+                <dt>CSS</dt>
+                <dd>A stylesheet language used for describing the look of web pages.</dd>
+            </dl>
+        </div>
+    </div>
+
+</body>
+
+</html>
